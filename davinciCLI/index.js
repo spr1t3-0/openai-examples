@@ -9,7 +9,7 @@ const api = new openai.OpenAIApi(config);
 
 const prompt = process.argv.slice(2)[0];
 
-if(!isSet(prompt)) {
+if(!prompt) {
     return console.log("Error: Please add your prompt wrapped in quotes");
 }
 
