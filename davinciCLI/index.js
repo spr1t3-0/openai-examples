@@ -1,4 +1,5 @@
 const openai = require('openai'); 
+
 // To retrieve an API Key, sign up on https://openai.com (e-mail and phone number required) 
 const config = new openai.Configuration({
 	apiKey: 'YOUR_API_KEY'
@@ -12,9 +13,8 @@ if(!prompt) {
     return console.log("Error: Please add your prompt wrapped in quotes");
 }
 
-
 async function run() {
-   await api.createCompletion({
+    await api.createCompletion({
         model: 'text-davinci-003', 
         max_tokens: 1024, 
         prompt: prompt,
