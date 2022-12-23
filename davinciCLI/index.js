@@ -1,5 +1,4 @@
 const openai = require('openai'); 
-const { isSet } = require('util/types');
 // To retrieve an API Key, sign up on https://openai.com (e-mail and phone number required) 
 const config = new openai.Configuration({
 	apiKey: 'YOUR_API_KEY'
