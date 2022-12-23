@@ -15,7 +15,7 @@ if(!prompt) {
 
 
 function run() {
-    api.createCompletion({
+   await api.createCompletion({
         model: 'text-davinci-003', 
         max_tokens: 1024, 
         prompt: prompt,
